@@ -31,7 +31,7 @@
 extern "C" {
   // "C" version of the BaseFloat typedef-- this saves us having to write
   // multiple versions of these kernels.
-#if (KALDI_DOUBLEPRECISION != 0)
+#if (KALDI_DOUBLEPRECISION == 0)
   typedef double  BaseFloat;
 #else
   typedef float   BaseFloat;
