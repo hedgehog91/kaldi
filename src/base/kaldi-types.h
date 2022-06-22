@@ -23,7 +23,7 @@
 
 namespace kaldi {
 // TYPEDEFS ..................................................................
-#if (KALDI_DOUBLEPRECISION != 0)
+#if (KALDI_DOUBLEPRECISION == 0)
 typedef double  BaseFloat;
 #else
 typedef float   BaseFloat;
